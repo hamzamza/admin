@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar/Navbar";
 function Home() {
   return (
     <div className="container-fluid">
+      home
       <div className=" row ">
         <Sidebar />
         <div className=" col">
