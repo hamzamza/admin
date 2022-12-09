@@ -7,7 +7,17 @@
     border-radius: 30%;
     margin-left: 10px;
   }
-
+  @media (max-width: 1158px) {
+    position: fixed;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0
+  ;
+  }
   .navitem {
     position: relative;
     margin-inline: 0.2rem;

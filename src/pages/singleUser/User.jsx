@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./single.scss";
 
-function Single() {
+function User() {
   return (
     <div className="container-fluid">
       <div className=" row ">
@@ -27,4 +27,4 @@ function Single() {
   );
 }
 
-export default Single;
+export default User;

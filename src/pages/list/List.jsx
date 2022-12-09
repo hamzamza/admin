@@ -1,9 +1,9 @@
-import DataTable from "../../components/dataTable/DataTAble";
+
 import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./list.scss";
 
-function List() {
+function List({Data}) {
   return (
     <div className="container-fluid">
       <div className=" row ">
@@ -12,7 +12,7 @@ function List() {
           <Navbar />
 
           <div className="list">
-            <DataTable />
+            <Data />
           </div>
         </div>
       </div>

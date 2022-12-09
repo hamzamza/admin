@@ -14,6 +14,7 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import logo from "./../../logo.png";
 import { useEffect, useState } from "react";
+import { HotelOutlined } from "@mui/icons-material";
 
 // #f7ed85 #f7858f #f7b485
 function Sidebar() {
@@ -55,24 +56,17 @@ function Sidebar() {
               <Link to="/users" style={noLink}>
                 <div className="side-item">
                   <PersonOutlineIcon className="co-color" />
-                  <div>users</div>
+                  <div>visiters</div>
                 </div>
               </Link>
-              <Link to="/list" style={noLink}>
+              <Link to="/hotels" style={noLink}>
                 <div className="side-item">
-                  <StoreIcon className="co-color" />
-                  <div>products</div>
+                  <HotelOutlined className="co-color" />
+                  <div>Hotels</div>
                 </div>
               </Link>
-              <div className="side-item">
-                <CreditCardIcon className="co-color" />
-                <div>orders</div>
-              </div>
+              
 
-              <div className="side-item">
-                <LocalShippingIcon className="co-color" />
-                <div>Delivery</div>
-              </div>
             </div>
 
             <div className="side">

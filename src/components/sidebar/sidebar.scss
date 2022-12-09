@@ -1,5 +1,5 @@
 .sidbare {
-  position: sticky;
+  
   top: 0;
   height: max-content;
   border: lightgray solid 1px;
@@ -10,10 +10,10 @@
   .togglebutton {
     display: none;
   }
-  @media (max-width: 958px) {
-    .togglebutton {
-      display: block;
-    }
+  @media (max-width: 1158px) {
+     
+      padding-top: 5rem;
+    
   }
   min-height: 90vh;
   .top {

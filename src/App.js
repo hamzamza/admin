@@ -3,10 +3,11 @@ import './App.css';
 import Home from './pages/home/Home';
 import { Routes, Route } from "react-router-dom";
 import Login from './pages/login/Login';
+import HotelData from './components/dataTable/hotels/HotelsData'
 import List from './pages/list/List';
 import New from './pages/new/New';
-import Single from './pages/single/Single';
-import { Link } from 'react-router-dom';
+import User from './pages/singleUser/User';
+import UsersData from "./components/dataTable/users/UsersData"
 import Protectedroute from './Protectedroute';
 import { userInputs } from './formSource';
 const Error = () => {
@@ -33,13 +34,13 @@ function App() {
       <Route path='/users'  >
         <Route index element={
           <Protectedroute>
-            <List />
+            <List Data={UsersData}/>
           </Protectedroute>
         } />
         <Route index path=':userId'
           element={
             <Protectedroute>
-              < Single />
+              < User />
             </Protectedroute>
           } />
         <Route index path='new'
@@ -54,13 +55,13 @@ function App() {
 
       <Route path='/hotels'  >
         <Route index element={<Protectedroute>
-          <List />
+          <List Data={HotelData}/>
         </Protectedroute>} />
         <Route index path=':hotelId' element={<Protectedroute>
-          < Single />
+          < User />
         </Protectedroute>} />
         <Route index path='new' element={<Protectedroute>
-          < New />
+          < New inputs={userInputs} />
         </Protectedroute>} />
       </Route>
 
@@ -69,10 +70,10 @@ function App() {
           <List />
         </Protectedroute>} />
         <Route index path=':roomId' element={<Protectedroute>
-          < Single />
+          < User />
         </Protectedroute>} />
         <Route index path='new' element={<Protectedroute>
-          < New />
+          < New inputs={userInputs} />
         </Protectedroute>} />
       </Route>
 

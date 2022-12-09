@@ -1,7 +1,7 @@
 import { DataGrid } from "@mui/x-data-grid";
 import { useState } from "react";
-import useFetch from "../../hooks/useFetch";
-function DataTable() {
+import useFetch from "../../../hooks/useFetch";
+function UserTable() {
   const { data, loading, error } = useFetch("http://localhost:5000/api/users/");
   const columns = [
     { field: "id", headerName: "ID", width: 170 },
@@ -58,4 +58,4 @@ function DataTable() {
   );
 }
 
-export default DataTable;
+export default UserTable;
